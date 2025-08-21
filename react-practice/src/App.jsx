@@ -4,6 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  const handleNameChange = () => {
+    const names = ["Akaash", "Kamya", "Aditya", "Ishita"];
+    const int = Math.floor(Math.random() * 4);
+    return names[int];
+  }
   const [count, setCount] = useState(0)
 
   return (
@@ -17,6 +22,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <p>Hello {handleNameChange()}!</p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
