@@ -14,3 +14,29 @@ A boolean will not return an error, however it will not render.
 To comment, enclose */ */ with curly braces.
 
 Functions are typically started with the word "handle" as convention, and can also be rendered as javascript expressions.
+
+# Functional components
+
+Components such as headers, page content and footers can be separated into separate components and be called upon within the main App.jsx file. This result in code being more readable, increasing maintainability as it is easier to debug.
+
+# Applying CSS Styles
+
+Styles can be applied inline within the respective component files.
+
+For example:
+
+import React from 'react'
+const Header = () => {
+  const headerStyle = {
+
+      backgroundColor: 'royalBlue',
+      color: '#fff'
+  }
+  return (
+    <!--- <header style={headerStyle}>
+      <h1>Invite List</h1>
+      </header>
+  )
+}
+
+export default Header
