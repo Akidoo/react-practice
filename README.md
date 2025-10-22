@@ -25,7 +25,7 @@ Styles can be applied inline within the respective component files.
 
 For example:
 
-import React from 'react'
+```import React from 'react'
 const Header = () => {
   const headerStyle = {
 
@@ -33,10 +33,10 @@ const Header = () => {
       color: '#fff'
   }
   return (
-    <!--- <header style={headerStyle}>
+    <header style={headerStyle}>
       <h1>Invite List</h1>
       </header>
   )
 }
 
-export default Header
+export default Header```
